@@ -10,7 +10,7 @@ jobs:
       matrix:
 # List of keymap json files to build
         file:
-        - crkbd_miryoku_6yozo.json
+        - 6yozo.json
 # End of json file list
 
     steps:
