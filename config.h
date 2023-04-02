@@ -5,3 +5,10 @@
 // Crkbd_miryoku_6yozo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 // You should have received a copy of the GNU General Public License along with Crkbd_miryoku_6yozo. If not, see <https://www.gnu.org/licenses/>. 
 
+#pragma once
+
+// Based on qmk_firmware\keyboards\crkbd\keymaps\default
+
+#define MASTER_LEFT
+
+#define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"

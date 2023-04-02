@@ -34,5 +34,7 @@ LTO_ENABLE = yes
 # LTO_ENABLE = yes
 RGBLIGHT_SUPPORTED = yes
 RGB_MATRIX_SUPPORTED = yes
+OLED_ENABLE     = yes
+OLED_DRIVER     = SSD1306
 
 $(info Finished executing user rules.mk)
