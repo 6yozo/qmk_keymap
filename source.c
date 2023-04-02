@@ -6,6 +6,27 @@
 // You should have received a copy of the GNU General Public License along with Crkbd_miryoku_6yozo. If not, see <https://www.gnu.org/licenses/>. 
 #include QMK_KEYBOARD_H
 
+#ifdef KEY_OVERRIDE_ENABLE
+const key_override_t lesser_than_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_COMM, RALT(KC_NUBS), 0b000001);
+const key_override_t greater_than_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_DOT, RALT(KC_Z), 0b000001);
+const key_override_t slash_override = ko_make_with_layers_and_negmods(0, KC_SLSH, LSFT(KC_6), 0b000001, MOD_MASK_SHIFT);
+const key_override_t question_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_SLSH, LSFT(KC_COMM), 0b000001);
+const key_override_t apostrophe_override = ko_make_with_layers_and_negmods(0, KC_GRV, LSFT(KC_1), 0b000001, MOD_MASK_SHIFT);
+const key_override_t double_quote_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_GRV, LSFT(KC_2), 0b000001);
+
+
+// This globally defines all key overrides to be used
+const key_override_t **key_overrides = (const key_override_t *[]){
+	&lesser_than_override,
+	&greater_than_override,
+	&slash_override,
+	&question_override,
+	&apostrophe_override,
+	&double_quote_override,
+	NULL // Null terminate the array of overrides!
+};
+#endif
+
 // Based on qmk_firmware\keyboards\crkbd\keymaps\default
 
 #ifdef OLED_ENABLE
