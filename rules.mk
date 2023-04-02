@@ -24,16 +24,12 @@ EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = yes           # Enable N-Key Rollover ### i dont need it probably
-BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
-RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
-RGB_MATRIX_ENABLE = no
-RGB_MATRIX_DRIVER = WS2812
-LTO_ENABLE = yes
-# if firmware size over limit, try this option
-# LTO_ENABLE = yes
+BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality, yes -> #error "Backlight pin/pins not defined. Please configure."
+LTO_ENABLE = yes # if firmware size over limit, try this option
 RGBLIGHT_SUPPORTED = yes
 RGB_MATRIX_SUPPORTED = yes
+RGBLIGHT_ENABLE = yes    # Enable WS2812 RGB underlight / Cannot use RGBLIGHT and RGB Matrix using WS2812 at the same time.
+RGB_MATRIX_ENABLE = no  # WS2812B
 OLED_ENABLE     = yes
 OLED_DRIVER     = SSD1306
 
