@@ -5,6 +5,8 @@
 # Crkbd_miryoku_6yozo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 # You should have received a copy of the GNU General Public License along with Crkbd_miryoku_6yozo. If not, see <https://www.gnu.org/licenses/>. 
 
+$(info Executing user rules.mk)
+
 SRC += source.c
 
 # Build Options from miryoku
@@ -32,3 +34,5 @@ LTO_ENABLE = yes
 # LTO_ENABLE = yes
 RGBLIGHT_SUPPORTED = yes
 RGB_MATRIX_SUPPORTED = yes
+
+$(info Finished executing user rules.mk)
