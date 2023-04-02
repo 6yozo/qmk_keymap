@@ -12,8 +12,8 @@ SRC += source.c
 # Build Options from miryoku
 MOUSEKEY_ENABLE = yes # Maybe not necessary, but does not hurt
 EXTRAKEY_ENABLE = yes # Copy / Paste works because of it?
-AUTO_SHIFT_ENABLE = yes # Test and disable, I can press shift when needed NP
-# TAP_DANCE_ENABLE = yes # Used by the double tap guard feature
+AUTO_SHIFT_ENABLE = no # I can press shift when needed NP
+TAP_DANCE_ENABLE = no # Used by the double tap guard feature, I don't use it at the moment
 CAPS_WORD_ENABLE = yes # This is a good feature, test with the desired layout
 KEY_OVERRIDE_ENABLE = yes # Used to activate caps word which probably did not work on qmk master miryoku
 
@@ -25,6 +25,7 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = yes           # Enable N-Key Rollover ### i dont need it probably
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality, yes -> #error "Backlight pin/pins not defined. Please configure."
+AUDIO_ENABLE = no           # Audio output
 LTO_ENABLE = yes # if firmware size over limit, try this option
 RGBLIGHT_SUPPORTED = yes
 RGB_MATRIX_SUPPORTED = yes
