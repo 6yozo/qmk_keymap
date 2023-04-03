@@ -13,6 +13,29 @@ const key_override_t slash_override = ko_make_with_layers_and_negmods(0, KC_SLSH
 const key_override_t question_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_SLSH, LSFT(KC_COMM), 0b000001);
 const key_override_t apostrophe_override = ko_make_with_layers_and_negmods(0, KC_GRV, LSFT(KC_1), 0b000001, MOD_MASK_SHIFT);
 const key_override_t double_quote_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_GRV, LSFT(KC_2), 0b000001);
+const key_override_t bracket_open_override_num = ko_make_with_layers_and_negmods(0, KC_F1, RALT(KC_F), 0b010000, MOD_MASK_SHIFT);
+const key_override_t brace_open_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_F1, RALT(KC_B), 0b010000);
+const key_override_t semicolon_override_num = ko_make_with_layers_and_negmods(0, KC_F2, RALT(KC_COMM), 0b010000, MOD_MASK_SHIFT);
+const key_override_t colon_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_F2, LSFT(KC_DOT), 0b010000);
+const key_override_t backtick_override_num = ko_make_with_layers_and_negmods(0, KC_F3, RALT(KC_7), 0b010000, MOD_MASK_SHIFT);
+const key_override_t tilde_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_F3, RALT(KC_1), 0b010000);
+const key_override_t ampersand_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_7, RALT(KC_C), 0b010000);
+const key_override_t dollar_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_4, RALT(KC_SCLN), 0b010000);
+const key_override_t exclamation_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_1, LSFT(KC_4), 0b010000);
+const key_override_t star_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_8, RALT(KC_SLSH), 0b010000);
+const key_override_t percent_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_5, LSFT(KC_5), 0b010000);
+const key_override_t at_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_2, RALT(KC_V), 0b010000);
+const key_override_t parenthesis_open_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_9, LSFT(KC_8), 0b010000);
+const key_override_t caret_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_6, RALT(KC_3), 0b010000); //This is a dead key on a hungarian layout
+const key_override_t hash_mark_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_3, RALT(KC_X), 0b010000);
+const key_override_t bracket_close_override_num = ko_make_with_layers_and_negmods(0, KC_F4, RALT(KC_G), 0b010000, MOD_MASK_SHIFT);
+const key_override_t brace_close_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_F4, RALT(KC_N), 0b010000);
+const key_override_t euals_override_num = ko_make_with_layers_and_negmods(0, KC_F5, LSFT(KC_7), 0b010000, MOD_MASK_SHIFT);
+const key_override_t plus_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_F5, LSFT(KC_3), 0b010000);
+const key_override_t backslash_override_num = ko_make_with_layers_and_negmods(0, KC_F6, RALT(KC_Q), 0b010000, MOD_MASK_SHIFT);
+const key_override_t pipe_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_F6, RALT(KC_W), 0b010000);
+const key_override_t greater_than_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_DOT, RALT(KC_Z), 0b010000);
+const key_override_t parenthesis_close_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_GRV, LSFT(KC_9), 0b010000);
 
 
 // This globally defines all key overrides to be used
@@ -23,6 +46,29 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 	&question_override,
 	&apostrophe_override,
 	&double_quote_override,
+	&bracket_open_override_num,
+	&brace_open_override_num,
+	&semicolon_override_num,
+	&colon_override_num,
+	&backtick_override_num,
+	&tilde_override_num,
+	&ampersand_override_num,
+	&dollar_override_num,
+	&exclamation_override_num,
+	&star_override_num,
+	&percent_override_num,
+	&at_override_num,
+	&parenthesis_open_override_num,
+	&caret_override_num,
+	&hash_mark_override_num,
+	&bracket_close_override_num,
+	&brace_close_override_num,
+	&euals_override_num,
+	&plus_override_num,
+	&backslash_override_num,
+	&pipe_override_num,
+	&greater_than_override_num,
+	&parenthesis_close_override_num,
 	NULL // Null terminate the array of overrides!
 };
 #endif
