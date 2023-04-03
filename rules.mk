@@ -12,10 +12,10 @@ SRC += source.c
 # Build Options from miryoku
 MOUSEKEY_ENABLE = yes # Maybe not necessary, but does not hurt
 EXTRAKEY_ENABLE = yes # Copy / Paste works because of it?
-AUTO_SHIFT_ENABLE = no # I can press shift when needed NP
+AUTO_SHIFT_ENABLE = no # Key override does not take effect when auto shifting. I can press shift when needed NP.
 TAP_DANCE_ENABLE = no # Used by the double tap guard feature, I don't use it at the moment
 CAPS_WORD_ENABLE = yes # This is a good feature, test with the desired layout
-KEY_OVERRIDE_ENABLE = yes # Used to activate caps word which probably did not work on qmk master miryoku
+KEY_OVERRIDE_ENABLE = yes # Needed for adjustment to a hungarian host
 
 # Build Options from crkbd
 BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
