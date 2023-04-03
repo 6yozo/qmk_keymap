@@ -32,3 +32,10 @@ The placement of the characters is based on the effort grid for matrix keyboards
 ú nav layer right pinky home
 ü nav layer right pinky top
 ű nav layer right pinky bottom.
+
+The RAlt on KC_DOT seems to disable keyoverride, so both RALTs is moved to the upper row.
+
+TODO
+---
+
+Try to restore RALT to its original position
