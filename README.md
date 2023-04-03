@@ -62,3 +62,91 @@ TODO
 
 - Disable the effect of any modifier apart from shift on dummy Fn
   buttons at a minimum.
+
+Keyboard layout
+---
+
+BASE:
+
+```
+                                                                  "
+Ó     Q     W     F     P     B           J     É     U     Y     '     Ö
+            RALT                                            RALT 
+
+
+Á     A     R     S     T     G           M     N     E     I     O     É
+      SUPER ALT   CTR   SHIFT                   SHIFT CTR   ALT   SUP
+
+                                          <     >     ?
+Ő     Z     X     C     D     V           K     H     ,     .     /     Í 
+      BTN                                                         BTN
+
+
+                  ESC   SPC   TAB         ENT   BSP   DEL
+	          MED   NAV   MOUSE       SYM   NUM   FUN
+
+```
+
+NAV:
+
+```
+                                                         
+            RALT                          AGAIN PASTE COPY  CUT   UNDO  Ü
+                                                            RALT
+
+
+      SUPER ALT   CTR   SHIFT             CAPS  <-    \/    /\    ->    Ú
+                                                                       
+
+                                                                
+                                          INS   HOME  PgDwn PgUp  End   Í
+      BTN                                               
+
+
+                                          ENT   BSP   DEL
+	                                         
+
+```
+
+NUM:
+
+```
+      {     &     *     (     }                                    
+      [     7     8     9     ]                             RALT         
+                                                                 
+
+      :     $     %     ^     +
+      ;     4     5     6     =                 SHIFT CTR   ALT   SUP    
+                                                                     
+
+      ~     !     @     #     |                                  
+      `     1     2     3     \                                           
+                                                                     
+
+
+                  >     )     _                           
+	          .     0     -                          
+
+```
+
+SYM: 
+
+```
+                                                                   
+      {     &     *     (     }                             RALT         
+                                                                 
+
+
+      :     $     %     ^     +                 SHIFT CTR   ALT   SUP    
+                                                                     
+
+                                                                          
+      ~     !     @     #     |                                           
+                                                                     
+
+
+                  (     )     _                           
+	                                                  
+
+```
+
