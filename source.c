@@ -13,6 +13,7 @@ const key_override_t slash_override = ko_make_with_layers_and_negmods(0, KC_SLSH
 const key_override_t question_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_SLSH, LSFT(KC_COMM), 0b000001);
 const key_override_t apostrophe_override = ko_make_with_layers_and_negmods(0, KC_GRV, LSFT(KC_1), 0b000001, MOD_MASK_SHIFT);
 const key_override_t double_quote_override = ko_make_with_layers(MOD_MASK_SHIFT, KC_GRV, LSFT(KC_2), 0b000001);
+
 const key_override_t bracket_open_override_num = ko_make_with_layers_and_negmods(0, KC_F1, RALT(KC_F), 0b010000, MOD_MASK_SHIFT);
 const key_override_t brace_open_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_F1, RALT(KC_B), 0b010000);
 const key_override_t semicolon_override_num = ko_make_with_layers_and_negmods(0, KC_F2, RALT(KC_COMM), 0b010000, MOD_MASK_SHIFT);
@@ -37,6 +38,24 @@ const key_override_t pipe_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_
 const key_override_t greater_than_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_DOT, RALT(KC_Z), 0b010000);
 const key_override_t parenthesis_close_override_num = ko_make_with_layers(MOD_MASK_SHIFT, KC_GRV, LSFT(KC_9), 0b010000);
 
+const key_override_t bracket_open_override_fun = ko_make_with_layers(0, KC_F1, RALT(KC_B), 0b0100000);
+const key_override_t semicolon_override_fun = ko_make_with_layers(0, KC_F2, LSFT(KC_DOT), 0b0100000);
+const key_override_t backtick_override_fun = ko_make_with_layers(0, KC_F3, RALT(KC_1), 0b0100000);
+const key_override_t ampersand_override_fun = ko_make_with_layers(0, KC_F4, RALT(KC_C), 0b0100000);
+const key_override_t dollar_override_fun = ko_make_with_layers(0, KC_F5, RALT(KC_SCLN), 0b0100000);
+const key_override_t exclamation_override_fun = ko_make_with_layers(0, KC_F6, LSFT(KC_4), 0b0100000);
+const key_override_t star_override_fun = ko_make_with_layers(0, KC_F7, RALT(KC_SLSH), 0b0100000);
+const key_override_t percent_override_fun = ko_make_with_layers(0, KC_F8, LSFT(KC_5), 0b0100000);
+const key_override_t at_override_fun = ko_make_with_layers(0, KC_F9, RALT(KC_V), 0b0100000);
+const key_override_t parenthesis_open_override_fun = ko_make_with_layers(0, KC_F10, LSFT(KC_8), 0b0100000);
+const key_override_t caret_override_fun = ko_make_with_layers(0, KC_F11, RALT(KC_3), 0b0100000); //This is a dead key on a hungarian layout
+const key_override_t hash_mark_override_fun = ko_make_with_layers(0, KC_F12, RALT(KC_X), 0b0100000);
+const key_override_t braces_close_override_fun = ko_make_with_layers(0, KC_F13, RALT(KC_N), 0b0100000);
+const key_override_t plus_override_fun = ko_make_with_layers(0, KC_F14, LSFT(KC_3), 0b0100000);
+const key_override_t backslash_override_fun = ko_make_with_layers(0, KC_F15, RALT(KC_W), 0b0100000);
+const key_override_t parenthesis_open2_override_fun = ko_make_with_layers(0, KC_F16, LSFT(KC_8), 0b0100000);
+const key_override_t parenthesis_close_override_fun = ko_make_with_layers(0, KC_F17, LSFT(KC_9), 0b0100000);
+const key_override_t underscore_override_fun = ko_make_with_layers(0, KC_SLSH, LSFT(KC_SLSH), 0b0100000);
 
 // This globally defines all key overrides to be used
 const key_override_t **key_overrides = (const key_override_t *[]){
@@ -46,6 +65,7 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 	&question_override,
 	&apostrophe_override,
 	&double_quote_override,
+	
 	&bracket_open_override_num,
 	&brace_open_override_num,
 	&semicolon_override_num,
@@ -69,6 +89,25 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 	&pipe_override_num,
 	&greater_than_override_num,
 	&parenthesis_close_override_num,
+	
+	&bracket_open_override_fun,
+	&semicolon_override_fun,
+	&backtick_override_fun,
+	&ampersand_override_fun,
+	&dollar_override_fun,
+	&exclamation_override_fun,
+	&star_override_fun,
+	&percent_override_fun,
+	&at_override_fun,
+	&parenthesis_open_override_fun,
+	&caret_override_fun,
+	&hash_mark_override_fun,
+	&braces_close_override_fun,
+	&plus_override_fun,
+	&backslash_override_fun,
+	&parenthesis_open2_override_fun,
+	&parenthesis_close_override_fun,
+	&underscore_override_fun,
 	NULL // Null terminate the array of overrides!
 };
 #endif

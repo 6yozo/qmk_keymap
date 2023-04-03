@@ -50,9 +50,15 @@ no such key on the hungarian keyboard because modifiers must be used
 to type them (For example: '[' is typed by AltGr-f). In this case
 there is no key to move - more precisly whichever key is used both the
 base character and its shifted pair must be overriden - in this
-case I have decided to move F1..Fx keys.
+case I have decided to move F1..Fx keys (these are dummy Fn buttons).
 
 TODO
 ---
 
-Try to restore RALT to its original position
+- Try to restore RALT to its original position.
+
+- On Fun layer make the shifted key versions the same as the unshifted
+  buttons.
+
+- Disable the effect of any modifier apart from shift on dummy Fn
+  buttons at a minimum.
