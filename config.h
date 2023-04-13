@@ -7,25 +7,39 @@
 
 #pragma once
 
+// Already defined:
+//   #define NO_DEBUG          // disable debugging
+//   #define NO_PRINT          // disable printing/debugging using hid_listen
+// Do not want to disable:
+//   #define NO_ACTION_LAYER   // disable layers
+//   #define NO_ACTION_ONESHOT // disable one-shot modifiers
+//   #define NO_ACTION_TAPPING // disable tap dance and other tapping features, ex: cannot change layers
+
+// status indicators to show which keyboard layer is currently active
+#define RGBLIGHT_LAYERS
+
+// Configure caps word
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
 // Based on qmk_firmware\keyboards\crkbd\keymaps\default
 
 #define MASTER_LEFT
 
 #ifdef RGBLIGHT_ENABLE
     #define RGBLIGHT_EFFECT_BREATHING
-    #define RGBLIGHT_EFFECT_RAINBOW_MOOD
-    #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-    #define RGBLIGHT_EFFECT_SNAKE
-    #define RGBLIGHT_EFFECT_KNIGHT
-    #define RGBLIGHT_EFFECT_CHRISTMAS
-    #define RGBLIGHT_EFFECT_STATIC_GRADIENT
-    #define RGBLIGHT_EFFECT_RGB_TEST
-    #define RGBLIGHT_EFFECT_ALTERNATING
-    #define RGBLIGHT_EFFECT_TWINKLE
-    #define RGBLIGHT_LIMIT_VAL 120
-    #define RGBLIGHT_HUE_STEP 10
-    #define RGBLIGHT_SAT_STEP 17
-    #define RGBLIGHT_VAL_STEP 17
+    #undef RGBLIGHT_EFFECT_RAINBOW_MOOD
+    #undef RGBLIGHT_EFFECT_RAINBOW_SWIRL
+    #undef RGBLIGHT_EFFECT_SNAKE
+    #undef RGBLIGHT_EFFECT_KNIGHT
+    #undef RGBLIGHT_EFFECT_CHRISTMAS
+    #undef RGBLIGHT_EFFECT_STATIC_GRADIENT
+    #undef RGBLIGHT_EFFECT_RGB_TEST
+    #undef RGBLIGHT_EFFECT_ALTERNATING
+    #undef RGBLIGHT_EFFECT_TWINKLE
+//    #define RGBLIGHT_LIMIT_VAL 120
+//    #define RGBLIGHT_HUE_STEP 10
+//    #define RGBLIGHT_SAT_STEP 17
+//    #define RGBLIGHT_VAL_STEP 17
 #endif
 
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
