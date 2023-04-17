@@ -29,9 +29,13 @@ AUDIO_ENABLE = no           # Audio output
 LTO_ENABLE = yes            # if firmware size over limit, try this option
 RGBLIGHT_ENABLE = yes       # Enable WS2812 RGB underlight / Cannot use RGBLIGHT and RGB Matrix using WS2812 at the same time.
 RGB_MATRIX_ENABLE = no      # WS2812B
-OLED_ENABLE     = yes
+OLED_ENABLE = yes
+OLED_DRIVER = SSD1306
 
 # EXTRAFLAGS += -Os # -flto does not have an effect, probably the same a LTO_ENABLE
                     # -Os does not have an effect
+
+# Dynamic macros
+DYNAMIC_MACRO_ENABLE = yes
 
 $(info Finished executing user rules.mk)

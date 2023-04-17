@@ -7,6 +7,8 @@
 
 #pragma once
 
+#define DYNAMIC_MACRO_SIZE 128
+
 // Already defined:
 //   #define NO_DEBUG          // disable debugging
 //   #define NO_PRINT          // disable printing/debugging using hid_listen
@@ -16,10 +18,10 @@
 //   #define NO_ACTION_TAPPING // disable tap dance and other tapping features, ex: cannot change layers
 
 // status indicators to show which keyboard layer is currently active
-#define RGBLIGHT_LAYERS
+//#define RGBLIGHT_LAYERS
 
 // Configure caps word
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+//#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 // Based on qmk_firmware\keyboards\crkbd\keymaps\default
 
@@ -36,10 +38,10 @@
     #undef RGBLIGHT_EFFECT_RGB_TEST
     #undef RGBLIGHT_EFFECT_ALTERNATING
     #undef RGBLIGHT_EFFECT_TWINKLE
-//    #define RGBLIGHT_LIMIT_VAL 120
-//    #define RGBLIGHT_HUE_STEP 10
-//    #define RGBLIGHT_SAT_STEP 17
-//    #define RGBLIGHT_VAL_STEP 17
+    #define RGBLIGHT_LIMIT_VAL 120
+    #define RGBLIGHT_HUE_STEP 10
+    #define RGBLIGHT_SAT_STEP 17
+    #define RGBLIGHT_VAL_STEP 17
 #endif
 
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
