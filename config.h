@@ -18,9 +18,6 @@
 // status indicators to show which keyboard layer is currently active
 #define RGBLIGHT_LAYERS
 
-// Configure caps word
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
-
 // Based on qmk_firmware\keyboards\crkbd\keymaps\default
 
 #define MASTER_LEFT
