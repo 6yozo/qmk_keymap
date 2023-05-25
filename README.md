@@ -4,11 +4,12 @@ Design goals for the layout:
 ---
 
 - Shold be touch type friendly.
-- Use the well thought out Miryoku layout(no modifications to it).
+- Use the well thought out Miryoku layout with minimal modifications to it.
 - Should be able to use hungarian accents.
 - The host keyboard layout should be set to Hungarian.
 - Multiple OSs must be supported: Windows / Linux / Mac
 - Use Colemak DH layout on Corne which is the default in Miryoku layout.
+- There must be a 1 to 1 mapping for every button on the Hungarian ISO layout
 
 Hungarian accents:
 ---
@@ -52,6 +53,14 @@ there is no key to move - more precisly whichever key is used both the
 base character and its shifted pair must be overriden - in this
 case I have decided to move F1..Fx keys (these are dummy Fn buttons).
 
+Caps word
+---
+
+It is a QMK feature, implemented by adding a dedicated CAPS WORD
+TOGGLE button. The ordinary Caps Lock is still kept.
+
+
+
 TODO
 ---
 
@@ -92,11 +101,11 @@ NAV:
 ```
                                                          
             RALT                          AGAIN PASTE COPY  CUT   UNDO  Ü
-                                                            RALT
+                                                            
 
 
-      SUPER ALT   CTR   SHIFT             CAPS  <-    \/    /\    ->    Ú
-                                                                       
+      SUPER ALT   CTR   SHIFT CAPS        CAPS  <-    \/    /\    ->    Ú
+                              WORD                                         
 
                                                                 
                                           INS   HOME  PgDwn PgUp  End   Í
