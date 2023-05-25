@@ -15,6 +15,27 @@
 //   #define NO_ACTION_ONESHOT // disable one-shot modifiers
 //   #define NO_ACTION_TAPPING // disable tap dance and other tapping features, ex: cannot change layers
 
+// The default Tap-Or-Hold Decision Mode(Ignore Interrupt) selects the
+// hold action only if the dual-role key is held down longer than the
+// tapping term. When typing fast the modifiers do not activate
+// because of it, the typing speed must be lowered.
+//
+// The HOLD_ON_OTHER_KEY_PRESS mode activates modifiers when another
+// key is pressed. When typing fast and rolling occurs between letters
+// this unintentionally activates the modifiers.
+//
+// The PERMISSIVE_HOLD_PER_KEY mode is fast typing friendly. It does
+// not activate modifiers when rolling, but still activates them when
+// another key is pressed and released even within the tapping term.
+#define PERMISSIVE_HOLD_PER_KEY
+
+// Holding and releasing a dual-function key without pressing another
+// key will result in nothing happening. With retro tapping enabled,
+// releasing the key without pressing another will send the original
+// keycode even if it is outside the tapping term.
+#define RETRO_TAPPING
+
+
 // status indicators to show which keyboard layer is currently active
 #define RGBLIGHT_LAYERS
 
