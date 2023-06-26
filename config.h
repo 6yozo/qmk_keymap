@@ -33,7 +33,11 @@
 // key will result in nothing happening. With retro tapping enabled,
 // releasing the key without pressing another will send the original
 // keycode even if it is outside the tapping term.
-#define RETRO_TAPPING
+// 
+// Retro tapping types the key when you change your mind about 
+// which modifier to press. It happens more often than you would think.
+//
+// #define RETRO_TAPPING
 
 
 // status indicators to show which keyboard layer is currently active
