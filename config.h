@@ -3,7 +3,7 @@
 // This file is part of Crkbd_miryoku_6yozo.
 // Crkbd_miryoku_6yozo is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 // Crkbd_miryoku_6yozo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-// You should have received a copy of the GNU General Public License along with Crkbd_miryoku_6yozo. If not, see <https://www.gnu.org/licenses/>. 
+// You should have received a copy of the GNU General Public License along with Crkbd_miryoku_6yozo. If not, see <https://www.gnu.org/licenses/>.
 
 #pragma once
 
@@ -33,8 +33,8 @@
 // key will result in nothing happening. With retro tapping enabled,
 // releasing the key without pressing another will send the original
 // keycode even if it is outside the tapping term.
-// 
-// Retro tapping types the key when you change your mind about 
+//
+// Retro tapping types the key when you change your mind about
 // which modifier to press. It happens more often than you would think.
 //
 // #define RETRO_TAPPING
@@ -65,3 +65,53 @@
 #endif
 
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
+
+enum keyboard_keycodes {
+    U_ACUTE_WEN = SAFE_RANGE,
+    M_STAR_WEN,
+    M_PRCNT_WEN,
+    M_AT_WEN,
+    M_COMMA_WEN,
+    E_ACUTE_WEN,
+    I_ACUTE_WEN,
+    O_ACUTE_WEN,
+    M_LT_WEN,
+    M_LBRC_WEN,
+    M_LBKT_WEN,
+    M_LPAR_WEN,
+    M_BSLH_WEN,
+    A_ACUTE_WEN,
+    M_SQT_WEN,
+    M_DQT_WEN,
+    M_DOT_WEN,
+    M_GRAVE_WEN,
+    M_TILDE_WEN,
+    M_PLUS_WEN,
+    M_RPAR_WEN,
+    M_RBKT_WEN,
+    M_RBRC_WEN,
+    M_GT_WEN,
+    M_LC_BSPC_WEN,
+    M_BSPC_WEN,
+    M_RET_WEN,
+    M_TAB_WEN,
+    M_DEL_WEN,
+    M_ESC_WEN,
+    U_DACUTE_WEN,
+    M_EQUAL_WEN,
+    M_CARET_WEN,
+    M_HASH_WEN,
+    M_EXCL_WEN,
+    M_SEMI_WEN,
+    M_FSLH_WEN,
+    O_DACUTE_WEN,
+    U_DIARESIS_WEN,
+    M_PIPE_WEN,
+    M_AMPS_WEN,
+    M_DLLR_WEN,
+    M_MINUS_WEN,
+    M_QMARK_WEN,
+    M_COLON_WEN,
+    O_DIARESIS_WEN,
+    M_UNDER_WEN
+};
